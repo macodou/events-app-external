@@ -1,0 +1,19 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Event Name</th>
+            <th scope="col">Event description</th>
+            <th scope="col">Likes</th>
+        </tr>
+  </thead>
+  <tbody>
+      {{#events}}
+      <tr>
+          <td>{{ title }}</td>
+          <td>{{ description }}</td>
+          <td>{{ likes }}</td>
+      </tr>
+      {{/events}}
+  </tbody>
+</table>
+
