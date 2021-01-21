@@ -4,6 +4,7 @@
             <th scope="col">Event Name</th>
             <th scope="col">Event description</th>
             <th scope="col">Likes</th>
+            <th scope="col">Actions</th>
         </tr>
   </thead>
   <tbody>
@@ -12,6 +13,9 @@
           <td>{{ title }}</td>
           <td>{{ description }}</td>
           <td>{{ likes }}</td>
+          <td>
+              <button type="button" class="btn btn-outline-danger">X</button>
+          </td>
       </tr>
       {{/events}}
   </tbody>
