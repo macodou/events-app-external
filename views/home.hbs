@@ -14,7 +14,12 @@
           <td>{{ description }}</td>
           <td>{{ likes }}</td>
           <td>
-              <button type="button" class="btn btn-outline-danger">X</button>
+              <button type="button" class="btn btn-link">remove</button>
+              <form action="/like" method="post">
+                    <input type="hidden" id="eventId" name="eventId" value="{{ id }}">
+                  <button type="submit" class="btn btn-link">like</button>
+              </form>
+              
           </td>
       </tr>
       {{/events}}
